@@ -8,16 +8,17 @@ import closeIcon from './../../assets/icons/close.svg'
 function Navbar() {
   const [opened, setOpened] = useState(false)
   const handleClick = () => setOpened(state => !state)
+  const handleLinkClick = () => setOpened(false);  
   return (
     <nav className='navbar'>
         <div className="icon">
           <img src={logo} alt="" width="30" height="30" />
         </div>
         <ul className={opened ? 'opened' : ''}>
-          <Link to="/">Home</Link>
-          <Link to="/bracelets">Bracelets</Link>
-          <Link to="/about">About Freddy Knijff</Link>
-          <Link to="/contact">Contact</Link>
+          <Link onClick={handleLinkClick} to="/">Home</Link>
+          <Link onClick={handleLinkClick} to="/bracelets">Bracelets</Link>
+          <Link onClick={handleLinkClick} to="/about">About Freddy Knijff</Link>
+          <Link onClick={handleLinkClick} to="/contact">Contact</Link>
 
         </ul>        
         <div className="icon hamburger">
