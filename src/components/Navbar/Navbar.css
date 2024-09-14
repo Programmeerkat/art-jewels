@@ -1,21 +1,28 @@
 .navbar {
+  position: fixed;
   box-sizing: border-box;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background-color: #111111;
   padding: 10px;
   gap: 20px;
+  max-width: 980px;
 
   ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-
+    gap: 20px;
+    flex-grow: 1;
+  
+    li {
+      flex-shrink: 0;
+    }
+    
     a { 
       all: unset;
 
@@ -59,63 +66,3 @@
     }
   }
 }
-
-/* .navbar {
-  width: 100%;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  background-color: #111111;
-
-  padding: 20px;
-
-  ul {
-    box-sizing: content-box;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-    height: 0;
-
-    overflow: hidden;
-
-    position: fixed;
-    top: 90px;
-
-    padding: 0px;
-
-    
-    background-color: #111111;
-
-    &.opened {
-      height: auto;
-      padding: 20px;
-    }
-  }
-
-  .icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  @media screen and (min-width: 800px) {
-    ul {
-      position: static;
-      flex-direction: row;
-      height: auto;
-      width: auto;
-      gap: auto;
-    }
-
-    .icon.hamburger {
-      display: none;
-    }
-  }  
-} */
