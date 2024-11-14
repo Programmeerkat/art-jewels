@@ -10,7 +10,7 @@ function Home() {
         <img src='/images/14FKN07.jpg' alt=""/>
         <img src='/images/17FKN09.jpg' alt=""/>
         <img src='/images/48FKBO03.jpg' alt=""/>
-        <img src='/images/48FKBO10.jpg' alt=""/>
+        <img src='/images/85FKBO10.jpg' alt=""/>
       </div>
     )
   }
